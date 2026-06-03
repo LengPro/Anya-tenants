@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anya House for Rent</title>
+    <meta
+      id="metaDescription"
+      name="description"
+      content="Rental home website with gallery, house details, key contacts, and a living guide."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero hero-fullbleed" id="top">
+        <nav class="topbar topbar-overlay">
+          <div class="topbar-actions">
+            <div class="nav-pill">
+              <div class="nav-links nav-links-plain">
+              <a href="#top" id="navHome">Home</a>
+              <a href="#gallery" id="navGallery">Gallery</a>
+              <a href="#details" id="navDetails">Details</a>
+              <a href="#living" id="navLiving">Living Guide</a>
+              <a href="#contacts" id="navContacts">Contacts</a>
+              </div>
+            </div>
+            <div class="language-switch" aria-label="Language switcher">
+              <button class="language-button active" id="langEn" type="button">EN</button>
+              <button class="language-button" id="langTh" type="button">TH</button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="hero-grid hero-grid-full">
+          <section class="hero-copy hero-copy-light">
+            <p class="eyebrow eyebrow-light" id="heroEyebrow">Warm, calm, and easy living</p>
+            <h2 id="heroTitle">A warm rental home with everything important in one place</h2>
+            <p class="hero-text" id="heroText">
+              Browse real house photos, living details, key contacts, and useful stay information on one page.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#gallery" id="heroPrimaryButton">View Photos</a>
+              <a class="button glass" href="#contacts" id="heroSecondaryButton">Contact Info</a>
+            </div>
+          </section>
+        </div>
+      </header>
+
+      <main>
+        <section class="section" id="gallery">
+          <div class="section-heading">
+            <p class="eyebrow">Gallery</p>
+            <h3 id="galleryHeading">All House Photos</h3>
+          </div>
+          <div class="gallery-layout">
+            <div class="gallery-main">
+              <img id="featuredImage" src="assets/1.jpg" alt="House photo" />
+              <div class="gallery-overlay">
+                <div class="gallery-caption">
+                  <span id="galleryCounter">01 / 30</span>
+                  <strong id="galleryTitle">House Photo 01</strong>
+                </div>
+                <div class="gallery-controls">
+                  <button class="gallery-nav" id="prevImage" type="button" aria-label="Previous photo">‹</button>
+                  <button class="gallery-nav" id="nextImage" type="button" aria-label="Next photo">›</button>
+                </div>
+              </div>
+              <button class="zoom-button" id="openLightbox" type="button">View Large Photo</button>
+            </div>
+            <div class="gallery-sidebar" id="thumbnailList"></div>
+          </div>
+        </section>
+
+        <section class="section details-grid" id="details">
+          <div class="detail-panel soft-panel">
+            <div class="section-heading">
+              <p class="eyebrow">House Details</p>
+              <h3 id="detailsHeading">Rental House Details</h3>
+            </div>
+            <div class="detail-list" id="houseDetails"></div>
+          </div>
+
+          <div class="detail-panel accent-panel">
+            <div class="section-heading">
+              <p class="eyebrow">Emergency & Support</p>
+              <h3 id="stayGuideHeading">Emergency Contacts</h3>
+            </div>
+            <div class="mini-guide" id="supportInfo"></div>
+          </div>
+        </section>
+
+        <section class="section living-section" id="living">
+          <div class="section-heading">
+            <p class="eyebrow">Living Together</p>
+            <h3 id="livingHeading">Living Guide</h3>
+          </div>
+          <div class="living-grid">
+            <article class="living-card">
+              <h4 id="serviceHeading">Neighborhood Services</h4>
+              <ul id="serviceSchedule"></ul>
+            </article>
+            <article class="living-card">
+              <h4 id="rulesHeading">Living With Others</h4>
+              <ul id="houseRules"></ul>
+            </article>
+            <article class="living-card">
+              <h4 id="checklistHeading">Move-in Checklist</h4>
+              <ul id="checklist"></ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contacts-section" id="contacts">
+          <div class="section-heading">
+            <p class="eyebrow">Emergency & Support</p>
+            <h3 id="contactsHeading">Important Contacts</h3>
+          </div>
+          <div class="contact-grid" id="contactGrid"></div>
+          <p class="contact-note" id="contactNote">
+            You can update the real house information, names, and phone numbers in <code>script.js</code>.
+          </p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p id="footerText">Thank you for viewing this home. We hope it feels warm, calm, and welcoming.</p>
+        <a href="#top" id="backToTop">Back to Top</a>
+      </footer>
+    </div>
+
+    <dialog class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="closeLightbox" type="button" aria-label="Close">Close</button>
+      <img id="lightboxImage" src="assets/1.jpg" alt="Large house photo" />
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
