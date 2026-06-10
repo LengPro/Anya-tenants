@@ -42,11 +42,11 @@ const translations = {
     navDetails: "Details",
     navLiving: "Living Guide",
     navContacts: "Contacts",
-    heroEyebrow: "Guidebook for Anya tenants",
+    heroEyebrow: "Hello! Welcome to Anya",
     heroTitle:
-      "This website is a guide for the Anya rental house owned by Teerachai Poldejparinya. It provides essential information for tenants",
+      "Hello, welcome to your new home at Anya Bangna Ramkhamhaeng 2. We're glad you're here.",
     heroText:
-      "Browse the address, map, house photos, contact information, and community living rules within Anya Village",
+      "Everything you need is on this page — house photos, address & map, key contacts, and living guide for Anya Village.",
     heroPrimaryButton: "Gallery",
     heroSecondaryButton: "Living Guide",
     heroStatOne: "Real house photo as the hero background",
@@ -207,11 +207,11 @@ const translations = {
     navDetails: "รายละเอียด",
     navLiving: "การอยู่อาศัย",
     navContacts: "ติดต่อ",
-    heroEyebrow: "คู่มือสำหรับผู้เช่าบ้าน Anya",
+    heroEyebrow: "สวัสดี! ยินดีต้อนรับสู่ Anya",
     heroTitle:
-      "เว็บไซต์นี้จัดทำขึ้นเพื่อเป็นคู่มือสำหรับบ้านเช่า Anya ของ Teerachai Poldejparinya โดยรวบรวมข้อมูลสำคัญสำหรับผู้เช่า",
+      "สวัสดี ยินดีต้อนรับสู่บ้านใหม่ของคุณที่ Anya Bangna Ramkhamhaeng 2 ดีใจที่คุณมาอยู่ที่นี่",
     heroText:
-      "ดูที่อยู่ แผนที่ รูปภาพบ้าน ช่องทางติดต่อ และกฎระเบียบการอยู่อาศัยร่วมกันภายในหมู่บ้าน Anya",
+      "ทุกสิ่งที่คุณต้องการอยู่ในหน้านี้ — รูปบ้าน ที่อยู่และแผนที่ ช่องทางติดต่อสำคัญ และคู่มือการอยู่อาศัยในหมู่บ้าน Anya",
     heroPrimaryButton: "แกลเลอรี",
     heroSecondaryButton: "การอยู่อาศัย",
     heroStatOne: "รูปบ้านจริงเป็นภาพพื้นหลังหลัก",
