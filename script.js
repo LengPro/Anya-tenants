@@ -55,7 +55,6 @@ const translations = {
       "This website is a guide for the Anya rental house owned by Teerachai Poldejparinya. It provides essential information for tenants, including the address, map, house photos, contact information, and community living rules within Anya Village.",
     galleryHeading: "All House Photos",
     detailsHeading: "Rental House Details",
-    stayGuideHeading: "Emergency Contacts",
     livingHeading: "Living Guide",
     serviceHeading: "Neighborhood Services",
     rulesHeading: "Living With Others",
@@ -99,20 +98,6 @@ const translations = {
       {
         label: "Owner",
         value: "Teerachai Poldejparinya | 064-241-7555",
-      },
-    ],
-    supportInfo: [
-      {
-        title: "Home Owner",
-        body: "For rent questions, maintenance requests, or more information about the house.",
-      },
-      {
-        title: "Juristic Office / Common Area",
-        body: "For common area issues, access cards, village entry, and shared facilities.",
-      },
-      {
-        title: "Emergency Support",
-        body: "Keep key emergency contacts ready, such as police, fire, hospital, and medical hotlines.",
       },
     ],
     serviceSchedule: [
@@ -220,7 +205,6 @@ const translations = {
       "เว็บไซต์นี้จัดทำขึ้นเพื่อเป็นคู่มือสำหรับบ้านเช่า Anya ของ Teerachai Poldejparinya โดยรวบรวมข้อมูลสำคัญสำหรับผู้เช่า เช่น ที่อยู่ แผนที่ รูปภาพบ้าน ช่องทางติดต่อ และกฎระเบียบการอยู่อาศัยร่วมกันภายในหมู่บ้าน Anya",
     galleryHeading: "รูปบ้านทั้งหมด",
     detailsHeading: "รายละเอียดบ้านเช่า",
-    stayGuideHeading: "เบอร์ติดต่อสำคัญ",
     livingHeading: "รายละเอียดการอยู่อาศัย",
     serviceHeading: "ตารางบริการในหมู่บ้าน",
     rulesHeading: "ข้อแนะนำการอยู่ร่วมกับผู้อื่น",
@@ -263,20 +247,6 @@ const translations = {
       {
         label: "เจ้าของบ้าน",
         value: "Teerachai Poldejparinya | 064-241-7555",
-      },
-    ],
-    supportInfo: [
-      {
-        title: "เจ้าของบ้าน",
-        body: "เหมาะสำหรับติดต่อเรื่องค่าเช่า การซ่อมบำรุง หรือสอบถามรายละเอียดเพิ่มเติมของบ้าน",
-      },
-      {
-        title: "นิติบุคคล / ส่วนกลาง",
-        body: "ใช้สำหรับแจ้งปัญหาส่วนกลาง การเข้าออกหมู่บ้าน การ์ด หรือพื้นที่ส่วนรวม",
-      },
-      {
-        title: "เหตุฉุกเฉิน",
-        body: "รวมช่องทางติดต่อที่ควรมีติดไว้ เช่น ตำรวจ ดับเพลิง โรงพยาบาล และเบอร์ฉุกเฉิน",
       },
     ],
     serviceSchedule: [
@@ -367,7 +337,6 @@ const featuredImage = document.getElementById("featuredImage");
 const lightboxImage = document.getElementById("lightboxImage");
 const thumbnailList = document.getElementById("thumbnailList");
 const houseDetailsContainer = document.getElementById("houseDetails");
-const supportInfoContainer = document.getElementById("supportInfo");
 const serviceScheduleContainer = document.getElementById("serviceSchedule");
 const houseRulesContainer = document.getElementById("houseRules");
 const checklistContainer = document.getElementById("checklist");
@@ -528,15 +497,6 @@ function renderDetails() {
   });
 }
 
-function renderSupportInfo() {
-  supportInfoContainer.innerHTML = "";
-  translations[currentLanguage].supportInfo.forEach((info) => {
-    const item = document.createElement("article");
-    item.innerHTML = `<strong>${info.title}</strong><p>${info.body}</p>`;
-    supportInfoContainer.appendChild(item);
-  });
-}
-
 function renderList(container, items) {
   container.innerHTML = "";
   items.forEach((item) => {
@@ -575,7 +535,6 @@ function applyLanguage(language) {
   updateLanguageButtons();
   renderGallery();
   renderDetails();
-  renderSupportInfo();
   renderLivingLists();
   renderContacts();
 }
