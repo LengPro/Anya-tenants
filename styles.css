@@ -797,11 +797,8 @@ button {
   }
 
   .hero-copy h2 {
-    font-size: 2.09rem;
-  }
-
-  .hero-copy-light h2 {
-    max-width: 9ch;
+    font-size: clamp(1.2rem, 5.2vw, 2.09rem);
+    max-width: 100%;
   }
 
   .topbar-overlay {
