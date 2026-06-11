@@ -37,7 +37,6 @@ const translations = {
     pageTitle: "Anya House for Rent",
     metaDescription:
       "Rental home website with gallery, house details, key contacts, and a living guide.",
-    navHome: "Home",
     navGallery: "Gallery",
     navDetails: "Details",
     navLiving: "Living Guide",
@@ -187,7 +186,6 @@ const translations = {
     pageTitle: "บ้านอบอุ่นให้เช่า",
     metaDescription:
       "เว็บไซต์แนะนำบ้านเช่า พร้อมรูปภาพ รายละเอียดบ้าน ช่องทางติดต่อ และคู่มือการอยู่อาศัย",
-    navHome: "หน้าหลัก",
     navGallery: "รูปบ้าน",
     navDetails: "รายละเอียด",
     navLiving: "การอยู่อาศัย",
@@ -376,7 +374,6 @@ function updateStaticText() {
 
   const textMap = {
     navGallery: t.navGallery,
-    navHome: t.navHome,
     navDetails: t.navDetails,
     navLiving: t.navLiving,
     navContacts: t.navContacts,
