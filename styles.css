@@ -246,7 +246,7 @@ button {
 }
 
 .hero-copy h2 {
-  font-size: clamp(1.75rem, 3.5vw, 3.5rem);
+  font-size: clamp(1.44rem, 3.5vw, 3.19rem);
   max-width: 11ch;
 }
 
@@ -797,7 +797,7 @@ button {
   }
 
   .hero-copy h2 {
-    font-size: 2.4rem;
+    font-size: 2.09rem;
   }
 
   .hero-copy-light h2 {
