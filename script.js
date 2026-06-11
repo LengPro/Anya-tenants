@@ -54,6 +54,69 @@ const translations = {
       "This website is a guide for the Anya rental house owned by Teerachai Poldejparinya. It provides essential information for tenants, including the address, map, house photos, contact information, and community living rules within Anya Village.",
     galleryHeading: "All House Photos",
     detailsHeading: "Rental House Details",
+    assetHeading: "Asset List",
+    assetColItem: "Item",
+    assetColModel: "Model",
+    assetColQty: "Qty",
+    assetColPrice: "Price",
+    assetRooms: [
+      {
+        room: "Living Room",
+        items: [
+          { name: "Air conditioner", model: "25200BTU 42TVEA028A/38TVEA028A", amount: 1, price: "31,900฿" },
+          { name: 'Television Toshiba 65"', model: "55E330NP", amount: 1, price: "10,390฿" },
+          { name: "Soundbar Toshiba", model: "2ch 60w TS205", amount: 1, price: "1,999฿" },
+          { name: "Shoe storage cabinet SB Furniture", model: "Preem", amount: 1, price: "2,290฿" },
+          { name: "TV stand IKEA", model: "Brimnes 180cm.", amount: 1, price: "4,990฿" },
+          { name: "Sofa IKEA", model: "Smedstorp", amount: 1, price: "14,990฿" },
+          { name: "Dining table Index", model: "Danus", amount: 1, price: "10,990฿" },
+          { name: "Storage cabinet IKEA", model: "Hauga", amount: 1, price: "4,590฿" },
+          { name: "Mijia Vacuum", model: "Cleaner 2 600w", amount: 1, price: "990฿" },
+          { name: "Long working table IKEA", model: "Lagkapten", amount: 1, price: "3,590฿" },
+          { name: "Work chair Index", model: "Wallard", amount: 1, price: "2,090฿" },
+          { name: "One sofa IKEA", model: "Oskarshamn", amount: 1, price: "5,490฿" },
+        ],
+      },
+      {
+        room: "Kitchen Room",
+        items: [
+          { name: "Washing-Dry machine Toshiba", model: "TWD-T21BU115UWT(MG) 10.5/7", amount: 1, price: "17,990฿" },
+          { name: "Refrigerator Toshiba", model: "8.2Q GR-RT303WE-PMTH", amount: 1, price: "7,590฿" },
+          { name: "Microwave Toshiba", model: "MW3-EM20PE(BK) 20L 800W", amount: 1, price: "2,590฿" },
+          { name: "Double-decker chair IKEA", model: "Bekvam", amount: 1, price: "590฿" },
+        ],
+      },
+      {
+        room: "Master Bedroom",
+        items: [
+          { name: "Air conditioner", model: "18000BTU", amount: 1, price: "26,900฿" },
+          { name: "Water heater Toshiba", model: "TWH-38WTH 3800W", amount: 1, price: "2,190฿" },
+          { name: "Storage cabinet IKEA", model: "Malm", amount: 1, price: "5,490฿" },
+          { name: "6 feet bed IKEA", model: "Askvoll", amount: 1, price: "7,990฿" },
+          { name: "6 feet mattress SleepHappy", model: "Atlantis V2", amount: 1, price: "7,890฿" },
+          { name: "Bedside table IKEA", model: "Skruvby", amount: 2, price: "1,580฿" },
+          { name: "Wardrobe SB Furniture", model: "Wardrobe Plus", amount: 1, price: "16,000฿" },
+        ],
+      },
+      {
+        room: "Small Bedroom",
+        items: [
+          { name: "Air conditioner", model: "12000BTU 38TVEA013A/42TVEA01A3", amount: 1, price: "15,900฿" },
+          { name: "Water heater Toshiba", model: "TWH-38WTH 3800W", amount: 1, price: "2,190฿" },
+          { name: "5 feet bed Index", model: "Vivid", amount: 1, price: "7,990฿" },
+          { name: "5 feet mattress SleepHappy", model: "Atlantis V2", amount: 1, price: "8,590฿" },
+          { name: "Wardrobe Index", model: "Rome", amount: 1, price: "11,990฿" },
+        ],
+      },
+      {
+        room: "Other",
+        items: [
+          { name: "Door key", model: "Front, back, master bedroom, small bedroom", amount: 4, price: "600฿" },
+          { name: "Car sensor (village entry)", model: "-", amount: 1, price: "1,000฿" },
+          { name: "Fitness key card", model: "-", amount: 1, price: "500฿" },
+        ],
+      },
+    ],
     livingHeading: "Living Guide",
     serviceHeading: "Neighborhood Services",
     rulesHeading: "Living With Others",
@@ -203,6 +266,69 @@ const translations = {
       "เว็บไซต์นี้จัดทำขึ้นเพื่อเป็นคู่มือสำหรับบ้านเช่า Anya ของ Teerachai Poldejparinya โดยรวบรวมข้อมูลสำคัญสำหรับผู้เช่า เช่น ที่อยู่ แผนที่ รูปภาพบ้าน ช่องทางติดต่อ และกฎระเบียบการอยู่อาศัยร่วมกันภายในหมู่บ้าน Anya",
     galleryHeading: "รูปบ้านทั้งหมด",
     detailsHeading: "รายละเอียดบ้านเช่า",
+    assetHeading: "รายการทรัพย์สิน",
+    assetColItem: "รายการ",
+    assetColModel: "รุ่น",
+    assetColQty: "จำนวน",
+    assetColPrice: "ราคา",
+    assetRooms: [
+      {
+        room: "ห้องนั่งเล่น",
+        items: [
+          { name: "Air conditioner", model: "25200BTU 42TVEA028A/38TVEA028A", amount: 1, price: "31,900฿" },
+          { name: 'Television Toshiba 65"', model: "55E330NP", amount: 1, price: "10,390฿" },
+          { name: "Soundbar Toshiba", model: "2ch 60w TS205", amount: 1, price: "1,999฿" },
+          { name: "Shoe storage cabinet SB Furniture", model: "Preem", amount: 1, price: "2,290฿" },
+          { name: "TV stand IKEA", model: "Brimnes 180cm.", amount: 1, price: "4,990฿" },
+          { name: "Sofa IKEA", model: "Smedstorp", amount: 1, price: "14,990฿" },
+          { name: "Dining table Index", model: "Danus", amount: 1, price: "10,990฿" },
+          { name: "Storage cabinet IKEA", model: "Hauga", amount: 1, price: "4,590฿" },
+          { name: "Mijia Vacuum", model: "Cleaner 2 600w", amount: 1, price: "990฿" },
+          { name: "Long working table IKEA", model: "Lagkapten", amount: 1, price: "3,590฿" },
+          { name: "Work chair Index", model: "Wallard", amount: 1, price: "2,090฿" },
+          { name: "One sofa IKEA", model: "Oskarshamn", amount: 1, price: "5,490฿" },
+        ],
+      },
+      {
+        room: "ห้องครัว",
+        items: [
+          { name: "Washing-Dry machine Toshiba", model: "TWD-T21BU115UWT(MG) 10.5/7", amount: 1, price: "17,990฿" },
+          { name: "Refrigerator Toshiba", model: "8.2Q GR-RT303WE-PMTH", amount: 1, price: "7,590฿" },
+          { name: "Microwave Toshiba", model: "MW3-EM20PE(BK) 20L 800W", amount: 1, price: "2,590฿" },
+          { name: "Double-decker chair IKEA", model: "Bekvam", amount: 1, price: "590฿" },
+        ],
+      },
+      {
+        room: "ห้องนอนใหญ่",
+        items: [
+          { name: "Air conditioner", model: "18000BTU", amount: 1, price: "26,900฿" },
+          { name: "Water heater Toshiba", model: "TWH-38WTH 3800W", amount: 1, price: "2,190฿" },
+          { name: "Storage cabinet IKEA", model: "Malm", amount: 1, price: "5,490฿" },
+          { name: "6 feet bed IKEA", model: "Askvoll", amount: 1, price: "7,990฿" },
+          { name: "6 feet mattress SleepHappy", model: "Atlantis V2", amount: 1, price: "7,890฿" },
+          { name: "Bedside table IKEA", model: "Skruvby", amount: 2, price: "1,580฿" },
+          { name: "Wardrobe SB Furniture", model: "Wardrobe Plus", amount: 1, price: "16,000฿" },
+        ],
+      },
+      {
+        room: "ห้องนอนเล็ก",
+        items: [
+          { name: "Air conditioner", model: "12000BTU 38TVEA013A/42TVEA01A3", amount: 1, price: "15,900฿" },
+          { name: "Water heater Toshiba", model: "TWH-38WTH 3800W", amount: 1, price: "2,190฿" },
+          { name: "5 feet bed Index", model: "Vivid", amount: 1, price: "7,990฿" },
+          { name: "5 feet mattress SleepHappy", model: "Atlantis V2", amount: 1, price: "8,590฿" },
+          { name: "Wardrobe Index", model: "Rome", amount: 1, price: "11,990฿" },
+        ],
+      },
+      {
+        room: "อื่นๆ",
+        items: [
+          { name: "กุญแจบ้าน", model: "หน้าบ้าน หลังบ้าน ห้องนอนใหญ่ ห้องนอนเล็ก", amount: 4, price: "600฿" },
+          { name: "รีโมทเข้าหมู่บ้าน", model: "-", amount: 1, price: "1,000฿" },
+          { name: "บัตรฟิตเนส", model: "-", amount: 1, price: "500฿" },
+        ],
+      },
+    ],
     livingHeading: "รายละเอียดการอยู่อาศัย",
     serviceHeading: "ตารางบริการในหมู่บ้าน",
     rulesHeading: "ข้อแนะนำการอยู่ร่วมกับผู้อื่น",
@@ -335,6 +461,7 @@ const featuredImage = document.getElementById("featuredImage");
 const lightboxImage = document.getElementById("lightboxImage");
 const thumbnailList = document.getElementById("thumbnailList");
 const houseDetailsContainer = document.getElementById("houseDetails");
+const assetListContainer = document.getElementById("assetList");
 const serviceScheduleContainer = document.getElementById("serviceSchedule");
 const houseRulesContainer = document.getElementById("houseRules");
 const checklistContainer = document.getElementById("checklist");
@@ -526,12 +653,53 @@ function renderLivingLists() {
   renderList(checklistContainer, t.checklist);
 }
 
+function renderAssetList() {
+  const t = translations[currentLanguage];
+  assetListContainer.innerHTML = "";
+  const heading = document.createElement("h4");
+  heading.className = "asset-heading";
+  heading.textContent = t.assetHeading;
+  assetListContainer.appendChild(heading);
+  t.assetRooms.forEach((roomData) => {
+    const details = document.createElement("details");
+    details.className = "asset-room";
+    const summary = document.createElement("summary");
+    summary.innerHTML = `${roomData.room} <span class="asset-count">${roomData.items.length} items</span>`;
+    const table = document.createElement("table");
+    table.className = "asset-table";
+    table.innerHTML = `
+      <thead>
+        <tr>
+          <th>${t.assetColItem}</th>
+          <th>${t.assetColModel}</th>
+          <th>${t.assetColQty}</th>
+          <th>${t.assetColPrice}</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${roomData.items.map((item) => `
+          <tr>
+            <td>${item.name}</td>
+            <td>${item.model}</td>
+            <td>${item.amount}</td>
+            <td>${item.price}</td>
+          </tr>
+        `).join("")}
+      </tbody>
+    `;
+    details.appendChild(summary);
+    details.appendChild(table);
+    assetListContainer.appendChild(details);
+  });
+}
+
 function applyLanguage(language) {
   currentLanguage = language;
   updateStaticText();
   updateLanguageButtons();
   renderGallery();
   renderDetails();
+  renderAssetList();
   renderLivingLists();
   renderContacts();
 }
