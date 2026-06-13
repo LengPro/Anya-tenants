@@ -123,7 +123,7 @@ function Lightbox({ photos, index, setIndex, onClose, ofLabel }) {
 function App() {
   const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
   const data = window.ANYA_DATA;
-  const [lang, setLang] = useState(() => localStorage.getItem("anya_lang") || "th");
+  const [lang, setLang] = useState(() => localStorage.getItem("anya_lang") || "en");
   const [lbIndex, setLbIndex] = useState(null);
   const [scrolled, setScrolled] = useState(false);
   const L = data[lang];
