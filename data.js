@@ -111,8 +111,8 @@
         title: "สวัสดี ยินดีต้อนรับสู่ Anya",
         sub: "บ้านที่ Anya บางนา–รามคำแหง 2 — ดีใจที่คุณมาเป็นส่วนหนึ่งของที่นี่",
         body: "ทุกอย่างที่คุณต้องรู้รวมไว้ในหน้านี้แล้ว ทั้งรูปบ้านทั้งหมด ที่อยู่และแผนที่ คู่มือการอยู่อาศัยในหมู่บ้าน และเบอร์ติดต่อสำคัญ",
-        ctaPrimary: "ดูรูปบ้าน",
-        ctaSecondary: "ดูแผนที่",
+        ctaPrimary: "คู่มือ",
+        ctaSecondary: "ติดต่อ",
       },
       gallery: {
         eyebrow: "แกลเลอรี",
@@ -136,7 +136,7 @@
           { label: "สิ่งอำนวยความสะดวก", value: "ฟิตเนส · สระน้ำ · เลี้ยงสัตว์ได้", icon: "car" },
         ],
         addressLabel: "ที่อยู่",
-        address: "36/255 ซอยรามคำแหง 2\nแขวงดอกไม้ เขตประเวศ\nกรุงเทพฯ 10250",
+        address: "Anya บางนา-รามคำแหง 2\n36/255 ซอยรามคำแหง 2\nแขวงดอกไม้ เขตประเวศ\nกรุงเทพฯ 10250",
         mapLabel: "ตำแหน่งบน Google Maps",
         mapButton: "เปิดใน Google Maps",
         mapUrl: "https://maps.app.goo.gl/ikcjuk8DuZXbWgGy8",
@@ -146,6 +146,7 @@
         assetColModel: "รุ่น",
         assetColQty: "จำนวน",
         assetColPrice: "ราคา",
+        assetTotal: (n) => `รวมทั้งหมด ${n} รายการ`,
         assetRooms: ASSET_ROOMS_TH,
       },
       living: {
@@ -157,7 +158,7 @@
             icon: "trash",
             title: "บริการในหมู่บ้าน",
             items: [
-              { k: "วันเก็บขยะ", v: "จันทร์ / พุธ / ศุกร์ (เช้า)" },
+              { k: "วันเก็บขยะ", v: "จันทร์ / พฤหัสบดี (เช้า)" },
               { k: "ขยะชิ้นใหญ่", v: "ติดต่อส่วนกลางล่วงหน้า" },
               { k: "แจ้งซ่อมส่วนกลาง", v: "ติดต่อนิติบุคคลหรือเจ้าหน้าที่หมู่บ้าน" },
               { k: "รปภ.", v: "ตลอด 24 ชั่วโมง" },
@@ -207,7 +208,7 @@
           {
             label: "เจ้าของบ้าน",
             items: [
-              { name: "Teerachai Poldejparinya", phone: "064-241-7555", role: "เรื่องบ้าน / สัญญา" },
+              { name: "Teerachai (Leng)", phone: "064-241-7555", role: "เรื่องบ้าน / สัญญา" },
             ],
           },
           {
@@ -259,8 +260,8 @@
         title: "Hello, welcome to Anya",
         sub: "Your home at Anya Bangna–Ramkhamhaeng 2 — we're so glad you're here.",
         body: "Everything you need is on this page — all house photos, the address & map, the living guide for our village, and the key contacts.",
-        ctaPrimary: "View photos",
-        ctaSecondary: "Open map",
+        ctaPrimary: "Guide",
+        ctaSecondary: "Contacts",
       },
       gallery: {
         eyebrow: "Gallery",
@@ -284,7 +285,7 @@
           { label: "Facilities", value: "Fitness · Pool · Pet-friendly", icon: "car" },
         ],
         addressLabel: "Address",
-        address: "36/255 Soi Ramkhamhaeng 2\nDok Mai, Prawet\nBangkok 10250",
+        address: "Anya Bangna-Ramkhamhaeng 2\n36/255 Soi Ramkhamhaeng 2\nDok Mai, Prawet district\nBangkok 10250",
         mapLabel: "Location on Google Maps",
         mapButton: "Open in Google Maps",
         mapUrl: "https://maps.app.goo.gl/ikcjuk8DuZXbWgGy8",
@@ -294,6 +295,7 @@
         assetColModel: "Model",
         assetColQty: "Qty",
         assetColPrice: "Price",
+        assetTotal: (n) => `Total: ${n} items`,
         assetRooms: ASSET_ROOMS_EN,
       },
       living: {
@@ -305,7 +307,7 @@
             icon: "trash",
             title: "Neighborhood services",
             items: [
-              { k: "Garbage pickup", v: "Mon / Wed / Fri (morning)" },
+              { k: "Garbage pickup", v: "Mon / Thu (morning)" },
               { k: "Large item disposal", v: "Contact common area office in advance" },
               { k: "Common area repairs", v: "Contact the juristic office or village staff" },
               { k: "Security", v: "24 hours" },
@@ -355,7 +357,7 @@
           {
             label: "Owner",
             items: [
-              { name: "Teerachai Poldejparinya", phone: "064-241-7555", role: "House / lease" },
+              { name: "Teerachai (Leng)", phone: "064-241-7555", role: "House / lease" },
             ],
           },
           {

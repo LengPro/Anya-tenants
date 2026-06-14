@@ -222,6 +222,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   white-space: nowrap;
 }
 .addr__text { margin: 8px 0 0; white-space: pre-line; color: var(--ink-soft); line-height: 1.7; }
+.addr__map-btn { margin-top: 14px; }
 
 .map-card { display: flex; flex-direction: column; }
 .map-card__media { position: relative; aspect-ratio: 16 / 10; }
@@ -247,10 +248,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border-radius: var(--radius-sm); overflow: hidden; margin-top: 8px;
 }
 .asset-room summary {
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex; align-items: center;
   padding: 14px 18px; cursor: pointer; font-weight: 600; font-size: 15px;
   list-style: none; user-select: none; gap: 10px;
 }
+.asset-room__name { flex: 1; }
 .asset-room summary::-webkit-details-marker { display: none; }
 .asset-room summary::after {
   content: "›"; font-size: 1.4rem; color: var(--accent);
@@ -262,7 +264,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   background: var(--accent-tint); color: var(--accent-deep); margin-left: 6px;
 }
 .asset-table-wrap { overflow-x: auto; }
-.asset-table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 480px; }
+.asset-table { width: 100%; border-collapse: collapse; font-size: 14px; }
 .asset-table th {
   text-align: left; padding: 9px 18px;
   background: var(--surface-2); color: var(--ink-faint);
@@ -271,8 +273,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .asset-table td { padding: 11px 18px; border-top: 1px solid var(--line); line-height: 1.4; }
 .asset-td-model { color: var(--ink-soft); font-size: 13px; }
-.asset-td-price { font-weight: 600; color: var(--accent-deep); white-space: nowrap; }
+.asset-td-price { font-weight: 600; color: var(--accent-deep); white-space: nowrap; text-align: right; }
+.asset-th-price { text-align: right !important; }
 .asset-table tbody tr:hover td { background: var(--accent-tint); }
+.asset-list__total {
+  margin: 12px 0 0; text-align: right; font-size: 13px; font-weight: 600;
+  color: var(--ink-faint);
+}
 
 /* ---------- Living guide ---------- */
 .guide-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
@@ -407,7 +414,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .mobnav { display: none; }
   .footer { padding-bottom: 56px; }
   .hero__inner { padding-bottom: 110px; }
-  .details-grid { grid-template-columns: 1.05fr 0.95fr; align-items: start; }
   .spec-card { padding: 28px; }
   .guide-grid { grid-template-columns: repeat(3, 1fr); }
   .contact-grid { grid-template-columns: repeat(4, 1fr); }

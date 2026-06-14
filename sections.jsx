@@ -16,11 +16,11 @@ function Hero({ t, heroBg, photos, onOpen }) {
           <p className="hero__sub">{t.hero.sub}</p>
           <p className="hero__body">{t.hero.body}</p>
           <div className="hero__cta">
-            <a className="btn btn--primary" href="#gallery">
+            <a className="btn btn--primary" href="#living">
               {t.hero.ctaPrimary}<Icon name="arrow" size={18} />
             </a>
-            <a className="btn btn--ghost" href="#details">
-              <Icon name="pin" size={18} />{t.hero.ctaSecondary}
+            <a className="btn btn--ghost" href="#contacts">
+              <Icon name="phone" size={18} />{t.hero.ctaSecondary}
             </a>
           </div>
         </Reveal>
@@ -71,13 +71,14 @@ function Gallery({ t, photos, onOpen }) {
 /* ---------------- ASSET LIST (inside Details) ---------------- */
 function AssetList({ t }) {
   if (!t.assetRooms) return null;
+  const totalItems = t.assetRooms.reduce((sum, r) => sum + r.items.length, 0);
   return (
     <Reveal className="asset-list">
       <h3 className="asset-list__heading">{t.assetHeading}</h3>
       {t.assetRooms.map((roomData) => (
         <details key={roomData.room} className="asset-room">
           <summary>
-            <span>{roomData.room}</span>
+            <span className="asset-room__name">{roomData.room}</span>
             <span className="asset-room__count">{roomData.items.length}</span>
           </summary>
           <div className="asset-table-wrap">
@@ -87,7 +88,7 @@ function AssetList({ t }) {
                   <th>{t.assetColItem}</th>
                   <th>{t.assetColModel}</th>
                   <th>{t.assetColQty}</th>
-                  <th>{t.assetColPrice}</th>
+                  <th className="asset-th-price">{t.assetColPrice}</th>
                 </tr>
               </thead>
               <tbody>
@@ -104,6 +105,7 @@ function AssetList({ t }) {
           </div>
         </details>
       ))}
+      <p className="asset-list__total">{t.assetTotal(totalItems)}</p>
     </Reveal>
   );
 }
@@ -130,22 +132,7 @@ function Details({ t, photos }) {
             <div className="addr">
               <span className="addr__label"><Icon name="pin" size={16} />{t.details.addressLabel}</span>
               <p className="addr__text">{t.details.address}</p>
-            </div>
-          </Reveal>
-
-          <Reveal className="map-card" delay={80}>
-            <div className="map-card__media">
-              <img src={photos[1] ? photos[1].src : photos[0].src} alt="" />
-              <div className="map-card__overlay">
-                <span className="map-pin"><Icon name="pin" size={26} /></span>
-              </div>
-            </div>
-            <div className="map-card__foot">
-              <div>
-                <span className="map-card__label">{t.details.mapLabel}</span>
-                <span className="map-card__note">{t.details.mapNote}</span>
-              </div>
-              <a className="btn btn--primary btn--sm" href={t.details.mapUrl} target="_blank" rel="noopener">
+              <a className="btn btn--primary btn--sm addr__map-btn" href={t.details.mapUrl} target="_blank" rel="noopener">
                 <Icon name="pin" size={16} />{t.details.mapButton}
               </a>
             </div>
@@ -160,7 +147,6 @@ function Details({ t, photos }) {
 
 /* ---------------- LIVING GUIDE ---------------- */
 function Living({ t }) {
-  const inv = t.living.inventory;
   return (
     <section className="section section--living" id="living">
       <div className="wrap">
@@ -181,18 +167,6 @@ function Living({ t }) {
             </Reveal>
           ))}
         </div>
-
-        <Reveal className="inv">
-          <div className="inv__head">
-            <h3 className="inv__title">{inv.title}</h3>
-            <p className="inv__sub">{inv.sub}</p>
-          </div>
-          <ul className="inv__list">
-            {inv.items.map((it) => (
-              <li key={it}><span className="inv__check"><Icon name="check" size={14} /></span>{it}</li>
-            ))}
-          </ul>
-        </Reveal>
       </div>
     </section>
   );

@@ -16,7 +16,7 @@ const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
 function LanguageToggle({ lang, setLang }) {
   return (
     <div className="lang" role="group" aria-label="language">
-      {["th", "en"].map((l) => (
+      {["en", "th"].map((l) => (
         <button key={l} className={"lang__btn " + (lang === l ? "is-on" : "")} onClick={() => setLang(l)}>
           {l.toUpperCase()}
         </button>
@@ -27,9 +27,9 @@ function LanguageToggle({ lang, setLang }) {
 
 function TopNav({ t, lang, setLang, scrolled }) {
   const links = [
-    ["#gallery", t.nav.gallery],
     ["#details", t.nav.details],
     ["#living", t.nav.living],
+    ["#gallery", t.nav.gallery],
     ["#contacts", t.nav.contacts],
   ];
   return (
@@ -52,9 +52,9 @@ function TopNav({ t, lang, setLang, scrolled }) {
 
 function MobileNav({ t }) {
   const links = [
-    ["#gallery", t.nav.gallery, "expand"],
     ["#details", t.nav.details, "home"],
     ["#living", t.nav.living, "check"],
+    ["#gallery", t.nav.gallery, "expand"],
     ["#contacts", t.nav.contacts, "phone"],
   ];
   return (
@@ -150,9 +150,9 @@ function App() {
       <TopNav t={L} lang={lang} setLang={setLang} scrolled={scrolled} />
       <main>
         <Hero t={L} heroBg={data.heroBg} photos={data.photos} onOpen={setLbIndex} />
-        <Gallery t={L} photos={data.photos} onOpen={setLbIndex} />
         <Details t={L} photos={data.photos} />
         <Living t={L} />
+        <Gallery t={L} photos={data.photos} onOpen={setLbIndex} />
         <Contacts t={L} />
       </main>
       <Footer t={L} />
