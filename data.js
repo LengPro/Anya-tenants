@@ -216,6 +216,10 @@
             items: [
               { name: "รปภ. ประจำหมู่บ้าน", phone: "080-554-6606", role: "24 ชม." },
               { name: "นิติบุคคลหมู่บ้าน", phone: "091-050-2046", role: "09:00–18:00" },
+              { name: "คุณถาวร", phone: "094-991-1589", role: "ผู้จัดการ ฝ่ายปฏิบัติการ" },
+              { name: "ผู้จัดการกระต่าย", phone: "062-352-4390", role: "ผู้จัดการ" },
+              { name: "หัวหน้าชุดสายตรวจ (กลางวัน)", phone: "063-891-2362", role: "กะกลางวัน" },
+              { name: "หัวหน้าชุดสายตรวจ (กลางคืน)", phone: "063-891-2362", role: "กะกลางคืน" },
             ],
           },
           {
@@ -223,6 +227,11 @@
             items: [
               { name: "ช่างสวน K. Bubpha", phone: "092-289-1957", role: "นัดล่วงหน้า" },
               { name: "แก๊ส Choktawee Ram2", phone: "097-162-6295", role: "08:00–19:00" },
+              { name: "ช่างบิ๊ก", phone: "082-343-1243", role: "แจ้งซ่อมระบบประปาฉุกเฉิน" },
+              { name: "ช่างบิ๊ก", phone: "082-343-1243", role: "ซ่อมไฟฟ้า" },
+              { name: "ช่างจิ๋ว", phone: "095-324-2504", role: "ซ่อมไฟฟ้า" },
+              { name: "ช่างสอง", phone: "062-664-5559", role: "ซ่อมไฟฟ้า" },
+              { name: "ช่างโอ", phone: "064-051-8087", role: "ล้างแอร์" },
               { name: "AIS อินเทอร์เน็ต", phone: "1175", role: "24 ชม." },
               { name: "การไฟฟ้า MEA", phone: "1130", role: "ไฟฟ้าขัดข้อง" },
               { name: "การประปา MWA", phone: "1125", role: "น้ำประปา" },
@@ -232,8 +241,9 @@
             label: "ฉุกเฉิน",
             items: [
               { name: "ตำรวจ", phone: "191", role: "เหตุด่วนเหตุร้าย" },
-              { name: "ดับเพลิง", phone: "199", role: "ไฟไหม้" },
+              { name: "สถานีดับเพลิง", phone: "199", role: "ไฟไหม้" },
               { name: "การแพทย์ฉุกเฉิน", phone: "1669", role: "รถพยาบาล" },
+              { name: "ร.พ. สินแพทย์ เทพารักษ์", phone: "02-761-9888", role: "โรงพยาบาล" },
             ],
           },
         ],
@@ -365,6 +375,10 @@
             items: [
               { name: "Security guard", phone: "080-554-6606", role: "24 hrs" },
               { name: "Village juristic office", phone: "091-050-2046", role: "09:00–18:00" },
+              { name: "Khun Taworn", phone: "094-991-1589", role: "Operations Manager" },
+              { name: "Manager Kratai", phone: "062-352-4390", role: "Village Manager" },
+              { name: "Patrol Chief (Day)", phone: "063-891-2362", role: "Day shift" },
+              { name: "Patrol Chief (Night)", phone: "063-891-2362", role: "Night shift" },
             ],
           },
           {
@@ -372,6 +386,11 @@
             items: [
               { name: "Garden caretaker (K. Bubpha)", phone: "092-289-1957", role: "By appointment" },
               { name: "Gas shop (Choktawee Ram2)", phone: "097-162-6295", role: "08:00–19:00" },
+              { name: "K. Big", phone: "082-343-1243", role: "Emergency plumbing" },
+              { name: "K. Big", phone: "082-343-1243", role: "Electrical repair" },
+              { name: "K. Jiw", phone: "095-324-2504", role: "Electrical repair" },
+              { name: "K. Song", phone: "062-664-5559", role: "Electrical repair" },
+              { name: "K. O", phone: "064-051-8087", role: "AC cleaning" },
               { name: "AIS Internet", phone: "1175", role: "24 hrs" },
               { name: "Electricity (MEA)", phone: "1130", role: "Power outage" },
               { name: "Water authority (MWA)", phone: "1125", role: "Water supply" },
@@ -381,8 +400,9 @@
             label: "Emergency",
             items: [
               { name: "Police", phone: "191", role: "Emergency" },
-              { name: "Fire", phone: "199", role: "Fire" },
+              { name: "Fire Station", phone: "199", role: "Fire" },
               { name: "Medical emergency", phone: "1669", role: "Ambulance" },
+              { name: "Synphaet Theparak Hospital", phone: "02-761-9888", role: "Hospital" },
             ],
           },
         ],
