@@ -173,7 +173,7 @@ function Living({ t }) {
 }
 
 /* ---------------- CONTACTS ---------------- */
-const GROUP_ICON = { 0: "owner", 1: "shield", 2: "wrench", 3: "siren" };
+const GROUP_ICON = { 0: "owner", 1: "shield", 2: "siren", 3: "wrench" };
 function Contacts({ t }) {
   return (
     <section className="section section--contacts" id="contacts">
