@@ -159,9 +159,8 @@
             title: "บริการในหมู่บ้าน",
             items: [
               { k: "วันเก็บขยะ", v: "จันทร์ / พฤหัสบดี (เช้า)" },
-              { k: "ขยะชิ้นใหญ่", v: "ติดต่อส่วนกลางล่วงหน้า" },
-              { k: "แจ้งซ่อมส่วนกลาง", v: "ติดต่อนิติบุคคลหรือเจ้าหน้าที่หมู่บ้าน" },
-              { k: "รปภ.", v: "ตลอด 24 ชั่วโมง" },
+              { k: "ฟิตเนส", v: "06:00–22:00 (ปิดทุกวันจันทร์)" },
+              { k: "สระว่ายน้ำ", v: "ผู้ใหญ่ & เด็ก · ยาว 12–15ม.\nลึก 1.25ม. (ผู้ใหญ่) / 0.65ม. (เด็ก)\nอ.–ศ. 10:00–20:00 · ส.–อา. 9:00–20:00\n(ปิดทุกวันจันทร์)" },
             ],
           },
           {
@@ -318,9 +317,8 @@
             title: "Neighborhood services",
             items: [
               { k: "Garbage pickup", v: "Mon / Thu (morning)" },
-              { k: "Large item disposal", v: "Contact common area office in advance" },
-              { k: "Common area repairs", v: "Contact the juristic office or village staff" },
-              { k: "Security", v: "24 hours" },
+              { k: "Fitness", v: "06:00–22:00 (closed Mon)" },
+              { k: "Swimming pool", v: "Adult & Kids · 12–15m long\nDepth 1.25m (Adult) / 0.65m (Kids)\nTue–Fri 10:00–20:00 · Sat–Sun 9:00–20:00\n(Closed Mon)" },
             ],
           },
           {
