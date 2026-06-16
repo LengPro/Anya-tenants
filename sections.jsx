@@ -11,8 +11,6 @@ function Hero({ t, heroBg, photos, onOpen }) {
       </div>
       <div className="hero__inner">
         <Reveal className="hero__card">
-          <span className="eyebrow eyebrow--light">{t.hero.eyebrow}</span>
-          <h1 className="hero__title">{t.hero.title}</h1>
           <p className="hero__sub">{t.hero.sub}</p>
           <p className="hero__body">{t.hero.body}</p>
           <div className="hero__cta">
