@@ -144,6 +144,16 @@ function Details({ t, photos }) {
 }
 
 /* ---------------- LIVING GUIDE ---------------- */
+function renderKvValue(v) {
+  const lines = v.split('\n');
+  return lines.map((line, i) => (
+    React.createElement(React.Fragment, { key: i },
+      line.startsWith('*') ? React.createElement('span', { className: 'kv__warn' }, line) : line,
+      i < lines.length - 1 ? '\n' : null
+    )
+  ));
+}
+
 function Living({ t }) {
   return (
     <section className="section section--living" id="living">
@@ -158,7 +168,7 @@ function Living({ t }) {
                 {c.items.map((it) => (
                   <div className="kv__row" key={it.k}>
                     <dt>{it.k}</dt>
-                    <dd>{it.v}</dd>
+                    <dd>{renderKvValue(it.v)}</dd>
                   </div>
                 ))}
               </dl>
