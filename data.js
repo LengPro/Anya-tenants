@@ -170,7 +170,7 @@
               { k: "จอดรถ", v: "จอดในพื้นที่บ้านของตนเอง ไม่ขวางหน้าบ้านผู้อื่น" },
               { k: "ขยะสด", v: "งดทิ้งขยะสดนอกถัง ป้องกันกลิ่นและสัตว์รบกวน" },
               { k: "เสียง", v: "ดูแลระดับเสียงในช่วงกลางคืน" },
-              { k: "สัตว์เลี้ยง", v: "รักษาความสะอาดและไม่รบกวนพื้นที่ส่วนรวม" },
+              { k: "สัตว์เลี้ยง", v: "ใช้สายจูงเมื่อใช้พื้นที่ส่วนกลางและดูแลความสะอาด" },
             ],
           },
           {
@@ -329,7 +329,7 @@
               { k: "Parking", v: "Park within your own space, don't block neighbors" },
               { k: "Food waste", v: "No wet waste outside the bin to avoid pests" },
               { k: "Noise", v: "Keep noise low at night for a peaceful neighborhood" },
-              { k: "Pets", v: "Maintain cleanliness and respect shared spaces" },
+              { k: "Pets", v: "Keep on a leash in common areas and maintain cleanliness" },
             ],
           },
           {
