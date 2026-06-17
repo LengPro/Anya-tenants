@@ -13,6 +13,14 @@ function Hero({ t, heroBg, photos, onOpen }) {
         <Reveal className="hero__card">
           <p className="hero__sub">{t.hero.sub}</p>
           <p className="hero__body">{t.hero.body}</p>
+          <div className="hero__cta">
+            <a className="btn btn--primary" href="#living">
+              {t.hero.ctaPrimary}<Icon name="arrow" size={18} />
+            </a>
+            <a className="btn btn--ghost" href="#contacts">
+              <Icon name="phone" size={18} />{t.hero.ctaSecondary}
+            </a>
+          </div>
           {t.hero.nextEvent && (
             <div className="hero__event">
               <span className="hero__event-dot" />
@@ -23,14 +31,6 @@ function Hero({ t, heroBg, photos, onOpen }) {
               <span>{t.hero.nextEvent.date}</span>
             </div>
           )}
-          <div className="hero__cta">
-            <a className="btn btn--primary" href="#living">
-              {t.hero.ctaPrimary}<Icon name="arrow" size={18} />
-            </a>
-            <a className="btn btn--ghost" href="#contacts">
-              <Icon name="phone" size={18} />{t.hero.ctaSecondary}
-            </a>
-          </div>
         </Reveal>
       </div>
       <a href="#gallery" className="hero__scroll" aria-label="scroll">
