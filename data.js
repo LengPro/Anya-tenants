@@ -156,7 +156,7 @@
         cards: [
           {
             icon: "trash",
-            title: "บริการในหมู่บ้าน",
+            title: "บริการส่วนกลาง",
             items: [
               { k: "วันเก็บขยะ", v: "จันทร์ / พฤหัสบดี (เช้า)" },
               { k: "ฟิตเนส", v: "06:00–22:00 (ปิดทุกวันจันทร์)" },
@@ -171,6 +171,7 @@
               { k: "ขยะสด", v: "งดทิ้งขยะสดนอกถัง ป้องกันกลิ่นและสัตว์รบกวน" },
               { k: "เสียง", v: "ดูแลระดับเสียงในช่วงกลางคืน" },
               { k: "สัตว์เลี้ยง", v: "ใช้สายจูงเมื่อใช้พื้นที่ส่วนกลางและดูแลความสะอาด" },
+              { k: "Smoking", v: "สูบบุหรี่นอกบ้านเท่านั้น และระวังกลิ่นรบกวนเพื่อนบ้าน" },
             ],
           },
           {
@@ -315,7 +316,7 @@
         cards: [
           {
             icon: "trash",
-            title: "Neighborhood services",
+            title: "Property services",
             items: [
               { k: "Garbage pickup", v: "Mon / Thu (morning)" },
               { k: "Fitness", v: "06:00–22:00 (closed Mon)" },
@@ -330,6 +331,7 @@
               { k: "Food waste", v: "No wet waste outside the bin to avoid pests" },
               { k: "Noise", v: "Keep noise low at night for a peaceful neighborhood" },
               { k: "Pets", v: "Keep on a leash in common areas and maintain cleanliness" },
+              { k: "Smoking", v: "Outdoors only — be mindful of smoke affecting neighbors" },
             ],
           },
           {
