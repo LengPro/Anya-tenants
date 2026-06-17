@@ -13,6 +13,16 @@ function Hero({ t, heroBg, photos, onOpen }) {
         <Reveal className="hero__card">
           <p className="hero__sub">{t.hero.sub}</p>
           <p className="hero__body">{t.hero.body}</p>
+          {t.hero.nextEvent && (
+            <div className="hero__event">
+              <span className="hero__event-dot" />
+              <span className="hero__event-label">{t.hero.nextEvent.label}</span>
+              <span className="hero__event-sep">·</span>
+              <span>{t.hero.nextEvent.desc}</span>
+              <span className="hero__event-sep">·</span>
+              <span>{t.hero.nextEvent.date}</span>
+            </div>
+          )}
           <div className="hero__cta">
             <a className="btn btn--primary" href="#living">
               {t.hero.ctaPrimary}<Icon name="arrow" size={18} />

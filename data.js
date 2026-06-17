@@ -113,6 +113,7 @@
         body: "ทุกอย่างที่คุณต้องรู้รวมไว้ในหน้านี้แล้ว ทั้งรูปบ้านทั้งหมด ที่อยู่และแผนที่ คู่มือการอยู่อาศัยในหมู่บ้าน และเบอร์ติดต่อสำคัญ",
         ctaPrimary: "คู่มือ",
         ctaSecondary: "ติดต่อ",
+        nextEvent: { label: "Next Event", desc: "ล้างแอร์", date: "10 ธ.ค. 2026" },
       },
       gallery: {
         eyebrow: "แกลเลอรี",
@@ -273,6 +274,7 @@
         body: "Everything you need is on this page — all house photos, the address & map, the living guide for our village, and the key contacts.",
         ctaPrimary: "Guide",
         ctaSecondary: "Contacts",
+        nextEvent: { label: "Next Event", desc: "AC cleaning", date: "10 Dec 2026" },
       },
       gallery: {
         eyebrow: "Gallery",
