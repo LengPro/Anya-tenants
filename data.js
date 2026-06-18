@@ -65,6 +65,21 @@
     },
   ];
 
+  const ASSET_ROOMS_ZH = [
+    { room: "客厅", items: ASSET_ROOMS_TH[0].items },
+    { room: "厨房", items: ASSET_ROOMS_TH[1].items },
+    { room: "主卧室", items: ASSET_ROOMS_TH[2].items },
+    { room: "小卧室", items: ASSET_ROOMS_TH[3].items },
+    {
+      room: "其他",
+      items: [
+        { name: "门钥匙", model: "前门、后门、主卧室、小卧室", amount: 4, price: "600฿" },
+        { name: "小区门遥控器", model: "-", amount: 1, price: "1,000฿" },
+        { name: "健身房门卡", model: "-", amount: 1, price: "500฿" },
+      ],
+    },
+  ];
+
   const ASSET_ROOMS_EN = [
     {
       room: "Living Room",
@@ -415,6 +430,158 @@
       footer: {
         thanks: "Thank you for viewing this home. We hope it feels warm, calm, and welcoming.",
         top: "Back to top",
+      },
+    },
+
+    zh: {
+      langLabel: "ZH",
+      brand: "Anya",
+      village: "Anya Bangna–Ramkhamhaeng 2",
+      nav: {
+        gallery: "照片",
+        details: "详情",
+        living: "指南",
+        contacts: "联系",
+      },
+      hero: {
+        eyebrow: "欢迎来到您的新家",
+        title: "你好，欢迎来到 Anya",
+        sub: "您在 Anya Bangna–Ramkhamhaeng 2 的家 — 很高兴您的到来。",
+        body: "您需要的一切都在这页 — 所有房屋照片、地址与地图、小区生活指南以及重要联系方式。",
+        ctaPrimary: "指南",
+        ctaSecondary: "联系",
+        nextEvent: { label: "近期活动", desc: "清洗空调", date: "2026年12月10日" },
+      },
+      gallery: {
+        eyebrow: "图库",
+        title: "所有房屋照片",
+        sub: "房屋每个角落的真实照片，点击任意照片可放大查看。",
+        count: (n) => `${n} 张照片`,
+        viewAll: "查看全部照片",
+        showLess: "收起",
+        of: "共",
+      },
+      details: {
+        eyebrow: "房屋详情",
+        title: "关于房屋",
+        sub: "此出租房的规格与位置。",
+        specs: [
+          { label: "类型", value: "联排别墅（Eva款）", icon: "home" },
+          { label: "使用面积", value: "146 平方米", icon: "ruler" },
+          { label: "土地面积", value: "41 平方哇", icon: "land" },
+          { label: "卧室", value: "3间卧室", icon: "bed" },
+          { label: "浴室", value: "2间浴室", icon: "bath" },
+          { label: "设施", value: "健身房 · 泳池 · 可养宠物", icon: "car" },
+        ],
+        addressLabel: "地址",
+        address: "Anya Bangna-Ramkhamhaeng 2\n36/255 Soi Ramkhamhaeng 2\nDok Mai, Prawet区\n曼谷 10250",
+        mapLabel: "谷歌地图位置",
+        mapButton: "在谷歌地图中打开",
+        mapUrl: "https://maps.app.goo.gl/ikcjuk8DuZXbWgGy8",
+        mapNote: "点击按钮导航至房屋",
+        assetHeading: "资产清单",
+        assetColItem: "项目",
+        assetColModel: "型号",
+        assetColQty: "数量",
+        assetColPrice: "价格",
+        assetTotal: (n) => `共 ${n} 项`,
+        assetRooms: ASSET_ROOMS_ZH,
+      },
+      living: {
+        eyebrow: "共同生活",
+        title: "生活指南",
+        sub: "帮助在小区中顺利生活并与邻居保持友好关系的基本要点。",
+        cards: [
+          {
+            icon: "trash",
+            title: "物业服务",
+            items: [
+              { k: "垃圾收集", v: "周一 / 周四（早上）" },
+              { k: "健身房", v: "06:00–22:00（周一休息）" },
+              { k: "游泳池", v: "成人 & 儿童 · 长12–15米\n深1.25米（成人）/ 0.65米（儿童）\n周二至周五 10:00–20:00 · 周六至周日 9:00–20:00\n（周一休息）" },
+            ],
+          },
+          {
+            icon: "people",
+            title: "与他人共处",
+            items: [
+              { k: "停车", v: "在自己的停车位停车，不要阻挡邻居" },
+              { k: "厨余垃圾", v: "不要将湿垃圾放在垃圾桶外，避免异味和害虫" },
+              { k: "噪音", v: "晚上请保持低音量" },
+              { k: "宠物", v: "在公共区域须使用牵引绳，并保持清洁" },
+              { k: "吸烟", v: "仅限户外吸烟，注意烟味影响邻居" },
+            ],
+          },
+          {
+            icon: "check",
+            title: "设备使用指南",
+            items: [
+              { k: "Carrier空调", v: "通过Carrier应用连接Wi-Fi — 长按Mode键配对" },
+              { k: "洗烘一体机", v: "水阀位于机器背面" },
+              { k: "Teka燃气灶", v: "先开气罐阀门，按下并向右旋转点火\n*使用后务必关闭气阀" },
+              { k: "烟雾探测器", v: "位于厨房 — 红灯闪烁 = 待机状态" },
+              { k: "Joy Life", v: "小区应用程序，用于停车电子印章" },
+            ],
+          },
+        ],
+        inventory: {
+          title: "合同中的财产",
+          sub: "租户在租约下负责照管的物品。",
+          items: [],
+        },
+      },
+      contacts: {
+        eyebrow: "紧急联系与支援",
+        title: "重要联系方式",
+        sub: "请保存这些号码以备不时之需。",
+        groups: [
+          {
+            label: "房东",
+            items: [
+              { name: "Teerachai (Leng)", phone: "064-241-7555", role: "房屋 / 租约" },
+            ],
+          },
+          {
+            label: "小区",
+            items: [
+              { name: "保安", phone: "02-125-2256", role: "24小时" },
+              { name: "小区物业", phone: "091-050-2046", role: "09:00–18:00" },
+              { name: "K. Taworn", phone: "094-991-1589", role: "运营经理" },
+              { name: "Manager Kratai", phone: "062-352-4390", role: "小区经理" },
+              { name: "巡逻队长（白班）", phone: "063-891-2362", role: "白班" },
+              { name: "巡逻队长（夜班）", phone: "063-891-2362", role: "夜班" },
+            ],
+          },
+          {
+            label: "紧急",
+            items: [
+              { name: "警察", phone: "191", role: "紧急情况" },
+              { name: "消防站", phone: "199", role: "火灾" },
+              { name: "急救", phone: "1669", role: "救护车" },
+              { name: "Synphaet Theparak Hospital", phone: "02-761-9888", role: "医院" },
+            ],
+          },
+          {
+            label: "服务",
+            items: [
+              { name: "K. Buppha", phone: "092-289-1957", role: "园丁" },
+              { name: "Gas shop (Choktawee Ram2)", phone: "097-162-6295", role: "08:00–19:00" },
+              { name: "K. Big", phone: "082-343-1243", role: "紧急管道维修" },
+              { name: "K. Big", phone: "082-343-1243", role: "电气维修" },
+              { name: "K. Jiw", phone: "095-324-2504", role: "电气维修" },
+              { name: "K. Song", phone: "062-664-5559", role: "电气维修" },
+              { name: "K. O", phone: "064-051-8087", role: "清洗空调" },
+              { name: "AIS Internet", phone: "1175", role: "24小时" },
+              { name: "Electricity (MEA)", phone: "1130", role: "停电" },
+              { name: "Water authority (MWA)", phone: "1125", role: "供水" },
+            ],
+          },
+        ],
+        callLabel: "致电",
+      },
+      footer: {
+        thanks: "感谢您参观这个家，希望它让您感到温暖、宁静和舒适。",
+        top: "返回顶部",
       },
     },
   };

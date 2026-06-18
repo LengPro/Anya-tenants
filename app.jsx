@@ -16,7 +16,7 @@ const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
 function LanguageToggle({ lang, setLang }) {
   return (
     <div className="lang" role="group" aria-label="language">
-      {["en", "th"].map((l) => (
+      {["en", "zh", "th"].map((l) => (
         <button key={l} className={"lang__btn " + (lang === l ? "is-on" : "")} onClick={() => setLang(l)}>
           {l.toUpperCase()}
         </button>
