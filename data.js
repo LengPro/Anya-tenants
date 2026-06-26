@@ -30,6 +30,7 @@
         { name: "Washing-Dry machine Toshiba", model: "TWD-T21BU115UWT(MG) 10.5/7", amount: 1, price: "17,990฿" },
         { name: "Refrigerator Toshiba", model: "8.2Q GR-RT303WE-PMTH", amount: 1, price: "7,590฿" },
         { name: "Microwave Toshiba", model: "MW3-EM20PE(BK) 20L 800W", amount: 1, price: "2,590฿" },
+        { name: "Electric stove TechnoPlus+", model: "IHB 2070 DG", amount: 1, price: "15,000฿" },
         { name: "Double-decker chair IKEA", model: "Bekvam", amount: 1, price: "590฿" },
       ],
     },
@@ -129,8 +130,8 @@
         ctaPrimary: "คู่มือ",
         ctaSecondary: "ติดต่อ",
         nextEvent: [
-          { label: "Next Event", desc: "ติดตั้งเตาไฟฟ้า", date: "3 ก.ค. 2026" },
-          { label: "Next Event", desc: "ล้างแอร์", date: "10 ธ.ค. 2026" },
+          { label: "Event", desc: "ติดตั้งเตาไฟฟ้า", date: "3 ก.ค. 2026" },
+          { label: "Event", desc: "ล้างแอร์", date: "10 ธ.ค. 2026" },
         ],
       },
       gallery: {
@@ -293,8 +294,8 @@
         ctaPrimary: "Guide",
         ctaSecondary: "Contacts",
         nextEvent: [
-          { label: "Next Event", desc: "Electric stove installation", date: "3 Jul 2026" },
-          { label: "Next Event", desc: "AC cleaning", date: "10 Dec 2026" },
+          { label: "Event", desc: "Electric stove installation", date: "3 Jul 2026" },
+          { label: "Event", desc: "AC cleaning", date: "10 Dec 2026" },
         ],
       },
       gallery: {
@@ -457,8 +458,8 @@
         ctaPrimary: "指南",
         ctaSecondary: "联系",
         nextEvent: [
-          { label: "近期活动", desc: "安装电磁炉", date: "2026年7月3日" },
-          { label: "近期活动", desc: "清洗空调", date: "2026年12月10日" },
+          { label: "Event", desc: "安装电磁炉", date: "2026年7月3日" },
+          { label: "Event", desc: "清洗空调", date: "2026年12月10日" },
         ],
       },
       gallery: {
