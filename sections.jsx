@@ -22,13 +22,17 @@ function Hero({ t, heroBg, photos, onOpen }) {
             </a>
           </div>
           {t.hero.nextEvent && (
-            <div className="hero__event">
-              <span className="hero__event-dot" />
-              <span className="hero__event-label">{t.hero.nextEvent.label}</span>
-              <span className="hero__event-sep">·</span>
-              <span>{t.hero.nextEvent.desc}</span>
-              <span className="hero__event-sep">·</span>
-              <span>{t.hero.nextEvent.date}</span>
+            <div className="hero__events">
+              {[].concat(t.hero.nextEvent).map((ev, i) => (
+                <div key={i} className="hero__event">
+                  <span className="hero__event-dot" />
+                  <span className="hero__event-label">{ev.label}</span>
+                  <span className="hero__event-sep">·</span>
+                  <span>{ev.desc}</span>
+                  <span className="hero__event-sep">·</span>
+                  <span>{ev.date}</span>
+                </div>
+              ))}
             </div>
           )}
         </Reveal>

@@ -128,7 +128,10 @@
         body: "ทุกอย่างที่คุณต้องรู้รวมไว้ในหน้านี้แล้ว ทั้งรูปบ้านทั้งหมด ที่อยู่และแผนที่ คู่มือการอยู่อาศัยในหมู่บ้าน และเบอร์ติดต่อสำคัญ",
         ctaPrimary: "คู่มือ",
         ctaSecondary: "ติดต่อ",
-        nextEvent: { label: "Next Event", desc: "ล้างแอร์", date: "10 ธ.ค. 2026" },
+        nextEvent: [
+          { label: "Next Event", desc: "ติดตั้งเตาไฟฟ้า", date: "3 ก.ค. 2026" },
+          { label: "Next Event", desc: "ล้างแอร์", date: "10 ธ.ค. 2026" },
+        ],
       },
       gallery: {
         eyebrow: "แกลเลอรี",
@@ -196,7 +199,7 @@
             items: [
               { k: "แอร์ Carrier", v: "เชื่อมต่อ Wi-Fi กับแอพ Carrier โดยกดปุ่ม Mode ค้างไว้" },
               { k: "Wash & Dry Machine", v: "วาวล์น้ำเปิดที่ด้านหลังเครื่อง" },
-              { k: "เตาแก๊ส Teka", v: "เปิดวาวล์ที่ถังแก๊สก่อน กดปุ่มลง หมุนขวาเมื่อใช้งาน\n*อย่าลืมปิดวาวล์แก๊สทุกครั้ง" },
+              { k: "Electric stove", v: "ซ้าย : Induction | ใช้กับอุปกรณ์ที่รองรับ Induction เท่านั้น\nขวา : Ceramic | ใช้ได้กับอุปกรณ์ทั่วไป เช่น หม้อสแตนเลส กะทะ หรือแบบ Induction" },
               { k: "Smoke Detector", v: "อยู่ในห้องครัว ไฟกระพริบสีแดง = Standby" },
               { k: "Joy Life", v: "แอพของโครงการ เพื่อ E-Stamp บัตรจอดรถ" },
             ],
@@ -289,7 +292,10 @@
         body: "Everything you need is on this page — all house photos, the address & map, the living guide for our village, and the key contacts.",
         ctaPrimary: "Guide",
         ctaSecondary: "Contacts",
-        nextEvent: { label: "Next Event", desc: "AC cleaning", date: "10 Dec 2026" },
+        nextEvent: [
+          { label: "Next Event", desc: "Electric stove installation", date: "3 Jul 2026" },
+          { label: "Next Event", desc: "AC cleaning", date: "10 Dec 2026" },
+        ],
       },
       gallery: {
         eyebrow: "Gallery",
@@ -357,7 +363,7 @@
             items: [
               { k: "Carrier AC", v: "Connect to Wi-Fi via the Carrier app — hold the Mode button to pair" },
               { k: "Wash & Dry Machine", v: "Water valve is at the back of the machine" },
-              { k: "Teka Gas Stove", v: "Open the gas valve first, press down & turn right to ignite.\n*Always close the gas valve after use" },
+              { k: "Electric stove", v: "Left: Induction | For induction-compatible cookware only\nRight: Ceramic | Works with general cookware — steel pots, pans, or induction" },
               { k: "Smoke Detector", v: "Located in the kitchen — red blinking light = Standby" },
               { k: "Joy Life", v: "Village app for parking E-Stamp" },
             ],
@@ -450,7 +456,10 @@
         body: "您需要的一切都在这页 — 所有房屋照片、地址与地图、小区生活指南以及重要联系方式。",
         ctaPrimary: "指南",
         ctaSecondary: "联系",
-        nextEvent: { label: "近期活动", desc: "清洗空调", date: "2026年12月10日" },
+        nextEvent: [
+          { label: "近期活动", desc: "安装电磁炉", date: "2026年7月3日" },
+          { label: "近期活动", desc: "清洗空调", date: "2026年12月10日" },
+        ],
       },
       gallery: {
         eyebrow: "图库",
@@ -518,7 +527,7 @@
             items: [
               { k: "Carrier空调", v: "通过Carrier应用连接Wi-Fi — 长按Mode键配对" },
               { k: "洗烘一体机", v: "水阀位于机器背面" },
-              { k: "Teka燃气灶", v: "先开气罐阀门，按下并向右旋转点火\n*使用后务必关闭气阀" },
+              { k: "电磁炉", v: "左: Induction | 仅适用于支持电磁加热的锅具\n右: Ceramic | 适用于一般锅具 — 不锈钢锅、平底锅或电磁锅" },
               { k: "烟雾探测器", v: "位于厨房 — 红灯闪烁 = 待机状态" },
               { k: "Joy Life", v: "小区应用程序，用于停车电子印章" },
             ],
