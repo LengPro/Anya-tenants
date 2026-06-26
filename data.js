@@ -130,7 +130,7 @@
         ctaPrimary: "คู่มือ",
         ctaSecondary: "ติดต่อ",
         nextEvent: [
-          { label: "Event", desc: "ติดตั้งเตาไฟฟ้า", date: "3 ก.ค. 2026" },
+          { label: "Event", desc: "ติดตั้งเตาไฟฟ้า", date: "27 มิ.ย. 2026" },
           { label: "Event", desc: "ล้างแอร์", date: "10 ธ.ค. 2026" },
         ],
       },
@@ -294,7 +294,7 @@
         ctaPrimary: "Guide",
         ctaSecondary: "Contacts",
         nextEvent: [
-          { label: "Event", desc: "Electric stove installation", date: "3 Jul 2026" },
+          { label: "Event", desc: "Electric stove installation", date: "27 Jun 2026" },
           { label: "Event", desc: "AC cleaning", date: "10 Dec 2026" },
         ],
       },
@@ -458,7 +458,7 @@
         ctaPrimary: "指南",
         ctaSecondary: "联系",
         nextEvent: [
-          { label: "Event", desc: "安装电磁炉", date: "2026年7月3日" },
+          { label: "Event", desc: "安装电磁炉", date: "2026年6月27日" },
           { label: "Event", desc: "清洗空调", date: "2026年12月10日" },
         ],
       },
